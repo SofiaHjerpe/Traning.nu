@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CompanyPage</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CompanyPage.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav style="display:flex; align-items: center" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="nav_wrap">
+                <a class="navbar-brand" asp-area="" style="color: rgba(00,40,00,0.5);" asp-controller="Home" asp-action="Index">Träning.nu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <h6>
+                                <a class="link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Startsida</a>
+                            </h6>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <h6>
+                            <a class="link text-dark" asp-area="" asp-controller="About" asp-action="Index">Om oss</a>
+                            </h6>
+                        </li>
+                     
+                       
+                        <li class="nav-item">
+                            <h6>
+                            <a class="link text-dark" asp-area="" asp-controller="Employee" asp-action="Index">Medarbetare</a>
+                            </h6>
+                        </li>
+                      
+                      
+                        <li class="nav-item">
+                            <h6>
+                            <a class="link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>
+                            </h6>
+                        </li>
+                      
+                    </ul>
+                </div>
+                <div  class="socials">
+
+
+                    <a href="https://www.facebook.com/sofia.hjerpe.9"> <ion-icon class="logo" name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/sofiahjerpe/?hl=sv"><ion-icon class="logo" name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/sofia-hjerpe-17b171178/"><ion-icon class="logo" name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.reddit.com/"><ion-icon class="logo" name="logo-reddit"></ion-icon></a>
+
+
+                </div>
+            </div>
+         
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+<footer class="footer">
+
+
+
+    <div class="footer_items">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Träning.nu</a>
+        <div class="footer_item">
+            <h6>Startsida </h6>
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Välkommen!</a>
+        </div>
+
+
+        <div class="footer_item">
+            <h6>Om oss</h6>
+            <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">Om oss</a>
+        </div>
+
+
+        <div class="footer_item">
+            <h6>Medarbetare</h6>
+            <a class="nav-link " asp-area="" asp-controller="Worker" asp-action="Index">Medarbetare</a>
+        </div>
+
+        <div class="footer_item">
+            <h6>Kontakt</h6>
+            <a class="nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="socials">
+
+
+        <a href="https://www.facebook.com/sofia.hjerpe.9"> <ion-icon class="logo" name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/sofiahjerpe/?hl=sv"><ion-icon class="logo" name="logo-instagram"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/sofia-hjerpe-17b171178/"><ion-icon class="logo" name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.reddit.com/"><ion-icon class="logo" name="logo-reddit"></ion-icon></a>
+
+
+    </div>
+
+</footer>
+
+</html>

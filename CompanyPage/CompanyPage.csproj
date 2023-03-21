@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\Img\Erik.jpg" />
+    <None Include="wwwroot\lib\Img\Fredrik.jpg" />
+    <None Include="wwwroot\lib\Img\johanna.jpg" />
+    <None Include="wwwroot\lib\Img\Lisa.jpg" />
+    <None Include="wwwroot\lib\Img\Weights.jpg" />
+    <None Include="wwwroot\lib\Index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Database\Database.csproj" />
+  </ItemGroup>
+
+</Project>

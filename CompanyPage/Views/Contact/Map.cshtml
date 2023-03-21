@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Map";
+}
+<head>
+    <title>Karta</title>
+    <script src="~/lib/Myscript.js"> </script>
+    <script url="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link alt="stylesheet" src="~/css/StyleSheet.css" />
+    
+</head>
+<body>
+    <div class="text-center" >
+<h4>Karta</h4>
+<div><div id="modal_map" class="myMap"></div></div>
+        <a asp-area="" asp-controller="Contact" asp-action="Index">Tillbaka</a></p>
+    </div>
+    
+
+
+
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyu9xEEZ5ORUlJpG_QvgAgSZTjjUF86YE&callback=initMap">
+</script>
+
+</body>
+<style>
+    body {
+      background-color: rgba(100,000, 20, 0.2);
+    }
+    .myMap {
+        margin-inline: 400px;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+      
+    }
+   
+ 
+</style>
